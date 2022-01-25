@@ -15,12 +15,12 @@ $infoArray = [
     ],
     'Perché il mio account è associato a un paese?' => [
         'part1' => 'Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:',
-        'part2' => '<ol>
+        'part2' => '<ol class="first">
                         <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:</li>
-                    <ol type="a">
-                        <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
-                        <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
-                    </ol>
+                        <ol type="a" class="second">
+                            <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
+                            <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+                        </ol>
                         <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
                     </ol>',
         'part3' => 'Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.',
@@ -46,12 +46,22 @@ $infoArray = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        tutte cose
+        <div>
+            <div>
+                logo google e privacy e termini
+            </div>
+            <div>
+                loghi personali
+            </div>
+        </div>
+        <ul>
+            <li>introduzioni</li>
+        </ul>
     </header>
     <main>
         <?php foreach($infoArray as $question => $answer) {  ?>
